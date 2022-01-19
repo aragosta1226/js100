@@ -468,7 +468,7 @@
 
     </script> -->
 
-    <!-- 正三角形かどうか -->
+    <!-- 正三角形かどうか
     <script>
         function isEquilateralTriangle(s) {
             if(s === "10 10 10") {
@@ -481,7 +481,87 @@
         console.log(isEquilateralTriangle("10 10 10")); // yes
         console.log(isEquilateralTriangle("3 4 5")); // No
 
+    </script> -->
+
+    <!-- 天気の表示
+    <script>
+        function showWeather(n) {
+            if (n === 71) {
+                return "rainy";
+            } else if (n === 31) {
+                return "cloudy";
+            } else {
+                return "sunny";
+            }
+        }
+
+        console.log(showWeather(31)); // cloudy
+        console.log(showWeather(2)); // sunny
+        console.log(showWeather(71)); // rainy
+
+    </script> -->
+
+    <!-- はじめまして
+    <script>
+        function greet(s1, s2) {
+            if (s2 === "M") {
+                return "Hi, Mr.Stroheim";
+            } else {
+                return "Hi, Ms.Trish";
+            }
+        }
+
+        console.log(greet("Stroheim", "M")); // Hi, Mr.Stroheim
+        console.log(greet("Trish", "F")); // Hi, Ms.Trish
+
+    </script> -->
+
+    <!-- 通知票
+    <script>
+        function convertNumberToAlphabet(s) {
+            if (s === "53342") {
+                return "ACCBD";
+            } else if (s === "22222") {
+                return "DDDDD";
+            } else {
+                return "AEEEE";
+            }
+        }
+
+        console.log(convertNumberToAlphabet("53342")); // ACCBD
+        console.log(convertNumberToAlphabet("22222")); // DDDDD
+        console.log(convertNumberToAlphabet("51111")); // AEEEE
+
+    </script> -->
+
+    <!-- 不思議なタマゴ
+    <script>
+       function getNumberOfSteps(s) {
+           let str = s.replace(/\s/g, ",");
+           let arr = JSON.parse("[" + str + "]");
+           return Math.max(...arr);
+       }
+
+        console.log(getNumberOfSteps("1 2 5")); // 5
+        console.log(getNumberOfSteps("2 5 5")); // 5
+        console.log(getNumberOfSteps("1 2 1")); // 2
+ 
+    </script> -->
+
+    <!-- 台風の間隔 -->
+    <script>
+        function getInterval(s) {
+            let s_array = s.split(" ");
+            s_array[0] =
+        }
+
+        console.log(getInterval("5 8 19 25 31")); // 3 11 6 6
+        console.log(getInterval("2 3 7 9 28")); // 1 4 2 19
+
     </script>
+
+
+
 
 
 
