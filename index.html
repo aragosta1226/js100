@@ -548,23 +548,45 @@
  
     </script> -->
 
-    <!-- 台風の間隔 -->
+    <!-- 台風の間隔
     <script>
         function getInterval(s) {
             let s_array = s.split(" ");
-            s_array[0] =
+            let hinichi1 = s_array[0];
+            let hinichi2 = s_array[1];
+            let hinichi3 = s_array[2];
+            let hinichi4 = s_array[3];
+            let hinichi5 = s_array[4];
+
+            return `${hinichi2 - hinichi1} ${hinichi3 - hinichi2} ${hinichi4 - hinichi3} ${hinichi5 - hinichi4}`;
         }
 
         console.log(getInterval("5 8 19 25 31")); // 3 11 6 6
         console.log(getInterval("2 3 7 9 28")); // 1 4 2 19
 
+    </script> -->
+
+    <!-- ◯◯ の秋
+    <script>
+        function getAutumn(s) {
+            return s.replace("noaki", " ");
+        }
+
+        console.log(getAutumn("codenoaki")); // code
+        console.log(getAutumn("dokusyo")); // dokusyo
+        console.log(getAutumn("javascriptnoaki")); // javascript
+
+    </script> -->
+
+    <!-- お月見だんご -->
+    <script>
+      function getNumberOfDango(s) {}
+
+        console.log(getNumberOfDango("3 50")); // 8
+        console.log(getNumberOfDango("100 500")); // 10
+        console.log(getNumberOfDango("2 4")); // 6
+  
     </script>
-
-
-
-
-
-
 
 </body>
 </html>
